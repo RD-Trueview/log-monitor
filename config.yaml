@@ -1,0 +1,13 @@
+# config.yaml - List of files to monitor and keywords (case-insensitive)
+files:
+  - /tmp/test-log.log
+  # add more paths like: /var/log/syslog
+
+keywords:
+  - ERROR
+  - CRITICAL
+  - FAILED
+  - Exception
+
+notify_command: "notify-send"   # desktop notifier; keep as-is for Ubuntu
+notify_summary: "Log Alert"
